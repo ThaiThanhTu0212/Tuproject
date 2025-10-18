@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/hinhnen_adr"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_register">
+
+    <TextView
+        android:id="@+id/tvTitleRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="30dp"
+        android:text="Đăng kí"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editGmail"
+        android:layout_width="407dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginBottom="236dp"
+        android:ems="10"
+        android:hint="Nhập gmail"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edtNewPass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNewUser"
+        android:layout_width="403dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="344dp"
+        android:ems="10"
+        android:hint="Nhập tên"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editGmail" />
+
+    <EditText
+        android:id="@+id/edtNewPass"
+        android:layout_width="409dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="463dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="Nhập password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegisterConfirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegisterConfirm"
+        android:layout_width="152dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="100dp"
+        android:text="Đăng kí"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNewPass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
